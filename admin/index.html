@@ -52,11 +52,12 @@
     </div>
 
     <script>
-        const API_URL = "URL_WEB_APP_APPS_SCRIPT_ANDA"; // Masukkan URL Deploy dari Google Apps Script di sini nanti
+        // MASUKKAN URL DEPLOY DARI GOOGLE APPS SCRIPT DI SINI NANTI
+        const API_URL = "URL_WEB_APP_APPS_SCRIPT_ANDA"; 
 
         function verifikasiLogin() {
             const pass = document.getElementById('admin-password').value;
-            // Ganti 'admin123' dengan password yang Mas inginkan
+            // Ganti 'admin123' dengan password rahasia pilihan Mas sendiri
             if (pass === 'admin123') {
                 document.getElementById('login-section').classList.add('hidden');
                 document.getElementById('dashboard-section').classList.remove('hidden');
@@ -83,7 +84,7 @@
             // Mengirim data menggunakan FETCH API ke jembatan Google Apps Script
             fetch(API_URL, {
                 method: 'POST',
-                mode: 'no-cors', // Penting untuk Apps Script Web App
+                mode: 'no-cors', // Penting untuk bypass CORS Apps Script Web App
                 headers: {
                     'Content-Type': 'application/json'
                 },
