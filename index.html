@@ -3,83 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Profesional | Pengembang Web</title>
+    <title>Portofolio Profesional | Habibur Rohman - Web Developer & Automation Specialist</title>
     <!-- Memuat Tailwind CSS Melalui CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Navigasi -->
-    <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-blue-600">Habibur Rohman</a>
-            <div class="space-x-6">
-                <a href="#about" class="hover:text-blue-600 font-medium">Tentang</a>
-                <a href="#projects" class="hover:text-blue-600 font-medium">Proyek</a>
-                <a href="#contact" class="hover:text-blue-600 font-medium">Kontak</a>
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 left-0 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Habibur Rohman, S.Kom</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">Tentang</a>
+                <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition">Pengalaman</a>
+                <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition">Proyek & Integrasi</a>
+                <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition">Kontak</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Halo, Saya Pengembang Web Penuh</h1>
-            <p class="text-xl opacity-90 mb-8">Fokus Pada Pembuatan Aplikasi Web Yang Cepat, Aman, Dan Efisien.</p>
-            <a href="#projects" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Lihat Portofolio</a>
+    <section class="pt-36 pb-24 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920')] bg-cover bg-center opacity-10 intense-blend"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Web Developer &amp; Automation Specialist</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 tracking-tight leading-tight">Membangun Solusi Digital &amp; Otomatisasi Administrasi Penuh</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">Berpengalaman dalam pengembangan aplikasi web menggunakan ekosistem PHP dan otomatisasi data berbasis integrasi Cloud untuk efisiensi sistem administrasi modern.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-200">Lihat Proyek Unggulan</a>
+                <a href="#contact" class="bg-white/10 text-white border border-white/20 font-semibold px-6 py-3 rounded-lg hover:bg-white/20 transition duration-200">Hubungi Saya</a>
+            </div>
         </div>
     </section>
 
     <!-- Tentang Saya -->
-    <section id="about" class="py-20">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Tentang Saya</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <p class="text-lg leading-relaxed mb-4">Saya Adalah Seorang Pengembang Web Yang Berpengalaman Dalam Membangun Sistem Manajemen Data, Otomatisasi Administrasi, Serta Integrasi Berbasis Cloud.</p>
-                    <p class="text-lg leading-relaxed">Berkomitmen Tinggi Untuk Menghasilkan Kode Yang Bersih Dan Solusi Digital Yang Membantu Efisiensi Kerja Organisasi.</p>
+    <section id="about" class="py-24 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-2 space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Tentang Saya</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">Saya adalah seorang profesional lulusan Ilmu Komputer (Amd.Kom &amp; S.Kom) dari STIKOM Banyuwangi. Fokus keahlian saya berpusat pada rekayasa perangkat lunak berbasis web serta otomatisasi alur kerja administrasi digital.</p>
+                    <p class="text-lg text-slate-600 leading-relaxed">Dengan menggabungkan kekuatan framework modern dan teknologi spreadsheet cloud, saya membangun sistem terintegrasi yang mampu memotong birokrasi manual, mempercepat visualisasi data, dan mengoptimalkan performa operasional instansi maupun bisnis.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                    <h3 class="font-bold text-xl mb-4 text-gray-900">Keahlian Teknis</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">PHP (Laravel / CI)</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">Python (Flask / Django)</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">Tailwind CSS</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">MySQL / PostgreSQL</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded">Google Apps Script</span>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 sticky top-24">
+                    <h3 class="font-bold text-lg text-slate-900 mb-4 pb-2 border-b border-slate-100">Teknologi &amp; Alat</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Framework &amp; Bahasa</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md border border-blue-100">PHP (Laravel / CodeIgniter)</span>
+                                <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md border border-blue-100">HTML5 / CSS3 / JavaScript</span>
+                                <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md border border-blue-100">Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Otomatisasi &amp; Database</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2.5 py-1 rounded-md border border-emerald-100">Google Apps Script</span>
+                                <span class="bg-emerald-50 text-emerald-750 text-xs font-medium px-2.5 py-1 rounded-md border border-emerald-100">Excel VBA Integration</span>
+                                <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2.5 py-1 rounded-md border border-emerald-100">MySQL / PostgreSQL</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riwayat Pendidikan & Pengalaman -->
+    <section id="experience" class="py-24 bg-slate-100/50 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 text-center mb-16 tracking-tight">Pendidikan &amp; Kompetensi</h2>
+            <div class="relative border-l border-slate-300 ml-4 md:ml-32 space-y-12">
+                <!-- Pendidikan S1 -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                    <div class="absolute hidden md:block md:-left-40 top-1 text-sm font-semibold text-slate-500 text-right w-28">Sarjana Komputer</div>
+                    <h3 class="font-bold text-xl text-slate-900">STIKOM Banyuwangi</h3>
+                    <p class="text-sm font-medium text-blue-600 mb-2">Pendidikan Akademik S1 &amp; D3 Ilmu Komputer</p>
+                    <p class="text-slate-600 leading-relaxed">Membangun landasan teoritis dan praktis yang mendalam mengenai arsitektur perangkat lunak, pemrograman berorientasi objek, manajemen basis data, serta analisis sistem informasi.</p>
+                </div>
+                <!-- Kompetensi Integrasi -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white shadow-sm"></div>
+                    <div class="absolute hidden md:block md:-left-40 top-1 text-sm font-semibold text-slate-500 text-right w-28">Keahlian Utama</div>
+                    <h3 class="font-bold text-xl text-slate-900">Spesialisasi Web Backend &amp; Cloud Integration</h3>
+                    <p class="text-sm font-medium text-indigo-600 mb-2">Fokus Otomatisasi Alur Kerja Instansi</p>
+                    <p class="text-slate-600 leading-relaxed">Berpengalaman luas dalam merancang jembatan integrasi (API) antara aplikasi berbasis website dengan Google API, spreadsheet, serta skrip otomatis guna menyederhanakan pelaporan manajemen.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Proyek -->
-    <section id="projects" class="py-20 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Proyek Unggulan</h2>
+    <section id="projects" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Proyek &amp; Sistem Otomatisasi</h2>
+                <p class="text-slate-600">Implementasi nyata dari penggabungan kekuatan arsitektur web framework dan efisiensi cloud spreadsheet.</p>
+            </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Kartu Proyek 1 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/60 overflow-hidden hover:shadow-md transition duration-200 flex flex-col justify-between">
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Sistem Pelacakan Bantuan Sosial</h3>
-                        <p class="text-gray-600 text-sm mb-4">Aplikasi Berbasis Web Untuk Memantau Distribusi Logistik Bantuan Kemanusiaan Secara Real-Time Di Berbagai Titik Lokasi.</p>
-                        <div class="text-xs font-semibold text-blue-600">Laravel • MySQL</div>
+                        <div class="bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md inline-block mb-4">Web Application</div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Sistem Pelacakan Kemanusiaan &amp; Logistik</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Aplikasi pemantauan distribusi bantuan sosial secara real-time yang dirancang untuk mengelola alur logistik armada, verifikasi berkas masuk, dan manajemen titik lokasi.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-50 flex justify-between items-center bg-slate-50/50">
+                        <span class="text-xs font-semibold text-slate-500">Laravel • MySQL</span>
                     </div>
                 </div>
                 <!-- Kartu Proyek 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/60 overflow-hidden hover:shadow-md transition duration-200 flex flex-col justify-between">
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Dasbor Otomatisasi Administrasi</h3>
-                        <p class="text-gray-600 text-sm mb-4">Integrasi Formulir Digital Dengan Spreadsheet Menggunakan Script Otomatis Guna Mempercepat Pelaporan Berkas.</p>
-                        <div class="text-xs font-semibold text-blue-600">Google Apps Script • Excel VBA</div>
+                        <div class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-md inline-block mb-4">Cloud Automation</div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Integrasi Web dengan Google Sheets API</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Dasbor sinkronisasi data dinamis yang menghubungkan frontend situs web secara langsung dengan Google Sheets menggunakan Apps Script sebagai basis penyimpanan otomatis data pelaporan.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-50 flex justify-between items-center bg-slate-50/50">
+                        <span class="text-xs font-semibold text-slate-500">Apps Script • REST API</span>
                     </div>
                 </div>
                 <!-- Kartu Proyek 3 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/60 overflow-hidden hover:shadow-md transition duration-200 flex flex-col justify-between">
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Aplikasi Inventory Gudang</h3>
-                        <p class="text-gray-600 text-sm mb-4">Sistem Pencatatan Stok Barang Masuk Dan Keluar Yang Dilengkapi Dengan Fitur Pembuat Laporan PDF Otomatis.</p>
-                        <div class="text-xs font-semibold text-blue-600">Python Flask • Tailwind CSS</div>
+                        <div class="bg-indigo-50 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded-md inline-block mb-4">Custom System</div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Sistem Pelaporan Inventaris Internal</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Aplikasi administrasi pencatatan stok dan aset organisasi yang dilengkapi fitur konversi otomatis laporan berkas ke format PDF dan sinkronisasi makro Excel VBA.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-50 flex justify-between items-center bg-slate-50/50">
+                        <span class="text-xs font-semibold text-slate-500">CodeIgniter • Excel VBA</span>
                     </div>
                 </div>
             </div>
@@ -87,30 +146,34 @@
     </section>
 
     <!-- Kontak -->
-    <section id="contact" class="py-20">
-        <div class="max-w-xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Hubungi Saya</h2>
-            <form class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6">
+    <section id="contact" class="py-24 bg-slate-950 text-white relative overflow-hidden">
+        <div class="max-w-xl mx-auto px-6 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-4 tracking-tight">Mulai Kolaborasi</h2>
+            <p class="text-slate-400 text-center mb-12">Punya kebutuhan aplikasi web atau sistem otomatisasi administrasi? Hubungi saya untuk diskusi solusi digital terbaik.</p>
+            <form class="bg-white text-slate-800 p-8 rounded-2xl shadow-xl space-y-6">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
-                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-750 mb-1">Alamat Email</label>
-                    <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Alamat Email</label>
+                    <input type="email" placeholder="nama@email.com" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Pesan Anda</label>
-                    <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required></textarea>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Pesan Anda</label>
+                    <textarea rows="4" placeholder="Tuliskan detail proyek atau pertanyaan Anda di sini..." class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition shadow">Kirim Pesan</button>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">Kirim Pesan Sekarang</button>
             </form>
         </div>
     </section>
 
     <!-- Kaki Halaman -->
-    <footer class="bg-gray-950 text-white py-6 text-center text-sm border-t border-gray-800">
-        <p>&copy; 2026 Habibur Rohman. Hak Cipta Dilindungi Undang-Undang.</p>
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-sm border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Habibur Rohman, S.Kom. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-xs text-slate-600">Hosted via Cloudflare Pages</p>
+        </div>
     </footer>
 
 </body>
